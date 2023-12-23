@@ -10,7 +10,7 @@ int main(void)
     set<string> fruit {
         "orange", "apple", "mango", "peach", "grape"
     };
-    fruit.insert("apple");
+    fruit.insert("applel");
     // 查看 set 容器大小
     cout << "Size of set container fruit is : " << fruit.size() << endl;
 	set<string>::iterator it = fruit.find("applel");

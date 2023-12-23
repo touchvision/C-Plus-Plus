@@ -23,7 +23,7 @@ int main(void)
     mapStudent[2] = "student_two";
     mapStudent[3] = "student_three";
     map<int, string>::iterator itr = mapStudent.find(1);
-	cout << itr->first << " " << itr->second << endl;
+    cout << itr->first << " " << itr->second << endl;
 
     cout << "The size of map is: " << mapStudent.size() << endl;
 

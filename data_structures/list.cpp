@@ -4,16 +4,26 @@
 
 using namespace std;
 
+template <typename T> 
+void display_element(T &list) 
+{
+    for(auto i = list.begin(); i != list.end(); i++) {
+        cout << *i << endl;
+    }
+}
 int main(void)
 {
     list<string> list1;
 
+    list1.push_front("lcc ");
     list1.push_back("GetIoT.tech ");
     list1.push_back("C++ STL");
+    if(list1.find("lcc"))
+        cout << "find lcc in list " << endl;     
+    display_element<list<string>>(list1);
+    list1.sort();
+    display_element<list<string>>(list1);
     list1.reverse();
-
-    for (auto i = list1.begin(); i != list1.end(); i++) {
-        cout  << *i << endl;
-    }
+    display_element<list<string>>(list1);
     return 0; 
 }
